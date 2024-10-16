@@ -58,7 +58,7 @@ app.MapPut("/api/categories", () =>
     }
     foundCategory.Name ="Smart Phone";
     foundCategory.Description = "This is the update smart phone";
-    return Results.NoContent();
+    return Results.NoContent(); //request was successful, but there is no data or content to return
 });
 app.Run();
 public record Category
